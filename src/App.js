@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Header } from "./components/headers";
 import "./App.css";
 import { fetchImages } from "./utils";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const App = () => {
 	const [userInput, setUserInput] = useState();
@@ -19,6 +21,8 @@ const App = () => {
 
 	return (
 		<div className="App">
+			<Navbar />
+			<h1>Insta-Clone</h1>
 			<Header title={title} />
 			<form onSubmit={submitHandler}>
 				<input onChange={(e) => setTitle(e.target.value)} />
@@ -35,6 +39,7 @@ const App = () => {
 					/>
 				);
 			})}
+			<Footer />
 		</div>
 	);
 };
