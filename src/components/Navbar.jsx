@@ -10,9 +10,7 @@ const Navbar = () => {
     return ( 
         <nav className="navbar">
             <img src={logo} alt="instagram logo" />
-
-  <input type="text" placeholder="Search.."></input>
-            
+            <input type="text" placeholder="Search.."></input>
             <div className="links">
                 <img src={home} alt="home" />
                 <img src={send} alt="send" />

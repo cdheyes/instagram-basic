@@ -11,28 +11,33 @@
 }
 
 .navbar {
+  display: flex;
   padding: 10px 5px 0px 20px;
     /*      top right bottom left */
-  display: flex;
+  
   align-items: center;
+  justify-content: space-between;
   max-width: 860px;
   margin: 0 auto;
   border-bottom: 1px solid silver;
 }
 
 .navbar img {
-  max-width: 120px;
-  max-height: 120px;
+  width: 8rem;
+  padding: 5px 10px 0px 20px;
+  /*      top right bottom left */
 }
 
 .navbar input {
+  width: 12rem;
   margin-left: auto;
 }
 
 .navbar .links {
-    padding: 15px 0px 0px 0px;
+    padding: 20px 5px 0px 5px;
       /*    top right bottom left */
-  margin-left: auto;
+    width: 15rem;
+    margin-left: auto;
 }
 
 .navbar .links img {
